@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<div class="container-fluid d-flex flex-column" style="height: 1000px">
+<div class="container-fluid d-flex flex-column" style="height: 1200px">
     <div class="row h-100">
         <div class="col-2 h-100" style="background: #bde0fe;">
             <h1 class="h3 text-light text-center py-4 mb-2">
