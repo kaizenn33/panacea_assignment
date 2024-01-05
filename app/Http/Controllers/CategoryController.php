@@ -36,11 +36,11 @@ class CategoryController extends Controller
         $category->photo = request()->photo;
         try{
             $category->save();
+            return redirect('/categories')->with('info', 'Category Added Sucessfully');
         }catch(Exception $e){
             echo $e->getMessage();
         }
 
-        return redirect('/categories')->with('info', 'Category Added Sucessfully');
     }
     public function delete($id){
         $category = Category::find($id);
@@ -69,10 +69,10 @@ class CategoryController extends Controller
         $category->photo = request()->photo;
         try{
             $category->save();
+            return redirect('/categories')->with('update', 'Category Updated Sucessfully');
         }catch(Exception $e){
             echo $e->getMessage();
         }
 
-        return redirect('/categories')->with('update', 'Category Updated Sucessfully');
     }
 }
